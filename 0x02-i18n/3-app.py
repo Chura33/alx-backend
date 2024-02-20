@@ -47,7 +47,7 @@ It is commonly used as a shorthand for marking strings in Flask applications.
 
 Returns:
     str: The translated string.
-"""    
+"""
 
 
 if __name__ == '__main__':
