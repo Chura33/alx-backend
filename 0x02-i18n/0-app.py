@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
+"""a simple flask page"""
 from flask import Flask, render_template
-
 app = Flask(__name__)
 
 
