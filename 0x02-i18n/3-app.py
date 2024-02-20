@@ -28,6 +28,9 @@ def get_locale():
 
 @app.route('/')
 def index():
+    """Return custom messages
+    according to language
+    """
     return render_template(
         '3-index.html',
         title=_('home_title'),
