@@ -38,6 +38,18 @@ def index() -> str:
     )
 
 
+# _ function documentation
+_.__doc__ = """
+Translate a message.
+
+This function is used for marking strings for translation.
+It is commonly used as a shorthand for marking strings in Flask applications.
+
+Returns:
+    str: The translated string.
+"""    
+
+
 if __name__ == '__main__':
     """run the app"""
     app.run(debug=True)
