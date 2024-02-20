@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Setup a basic Flask app"""
 
-from flask import Flask, render_template
-from flask_babel import Babel
+from flask import Flask, render_template, request
+from flask_babel import Babel, _
 
 app = Flask(__name__)
-
 
 # Configure Babel
 babel = Babel(app)
@@ -29,8 +28,11 @@ def get_locale():
 
 @app.route('/')
 def index():
-    """returns index.html"""
-    return render_template('1-index.html')
+    return render_template(
+        '3-index.html',
+        title=_('home_title'),
+        greeting=_('home_header')
+    )
 
 
 if __name__ == '__main__':
