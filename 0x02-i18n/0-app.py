@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index() -> str:
+    """a simple function"""
     return render_template('index.html')
 
 
