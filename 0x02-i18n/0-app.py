@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
-
+"""A simple flask app"""
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
-def index() -> str:
-    """Renders the index.html template."""
-    return render_template('index.html')
-
-
 @app.route('/')
-def index():
+def index() -> str:
     return render_template('index.html')
 
 
